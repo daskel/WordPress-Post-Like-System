@@ -371,7 +371,7 @@ function show_user_likes( $user ) { ?>
 			  'meta_query' => array (
 				array (
 				  'key' => '_user_liked',
-				  'value' => $user->ID,
+				  'value' => serialize($user->ID),
 				  'compare' => 'LIKE'
 				)
 			  ) );		
